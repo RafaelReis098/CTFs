@@ -6,7 +6,7 @@
 
 ### Introduction
 
-Greetings fellow ethical hackers! In this detailed account, I share my experiences with the "Cryptic Chronicles" Capture The Flag (CTF) challenge on Hack The Box. This cryptographic journey led me through deciphering messages, unveiling hidden keywords, and ultimately decrypting the flag.
+In this detailed account, I share my experiences with the "Cryptic Chronicles" Capture The Flag (CTF) challenge on Hack The Box. This cryptographic journey led me through deciphering messages, unveiling hidden keywords, and ultimately decrypting the flag.
 
 #### Getting Started
 
