@@ -53,3 +53,30 @@ The CTF adventure begins with a seemingly innocent login page, hiding potential 
     <input type="password" name="password" placeholder="Password">
     <button type="submit">Login</button>
 </form>
+
+```
+SQL Injection Discovery: Closer inspection reveals susceptibility to SQL injection, leading to an interesting error message.
+```
+SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax...
+```
+Exploiting SQL Injection
+Crafting the Payload: A payload is crafted to bypass authentication.
+```
+' OR '1'='1'--
+```
+Successful Login: Submitting the payload as the username successfully bypasses authentication.
+Locating the Flag
+
+Directory Traversal: Navigating through the application, a directory traversal vulnerability in the file download functionality is discovered.
+
+```
+https://webwonders.ctf/files/download?file=../../flag.txt
+```
+Claiming the Flag: The contents of the flag.txt file are revealed, and victory is within reach.
+```
+HTB{w3b_app_mast3r}
+
+```
+Conclusion
+"Web Wonders" provides a thrilling adventure into the realm of web application security. From uncovering SQL injection vulnerabilities to exploiting directory traversals, the challenges reinforce the significance of robust web security practices. This CTF not only hones penetration testing skills but also highlights the critical importance of securing web applications in the real world.
+
